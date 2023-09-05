@@ -6,6 +6,7 @@ body {
     font-family: "Roboto";
 }
 
+/* Defaults: Flex */
 .flex-column {
     display: flex;
     flex-direction: column;
@@ -15,11 +16,17 @@ body {
     display: flex;
 }
 
+.center-center {
+    justify-content: center;
+    align-items: center;
+}
+
 .section {
     padding: 10px 200px;
     min-height: 400px;
 }
 
+/* Defaults: Colors */
 .dark {
     background-color: #1F2937;
 }
@@ -57,7 +64,6 @@ body {
 }
 
 .content {
-    align-items: center;
     flex: 1;
 }
 
@@ -87,4 +93,19 @@ body {
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
+}
+
+.section.light .content {
+    gap: 50px;
+}
+
+.img-group {
+    flex: 1;
+    align-items: center;
+}
+
+.img-group img {
+    width: 16.6vw;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
 }
