@@ -1,3 +1,10 @@
+:root {
+    --dark-color: #1F2937;
+    --light-color: #F9FAF8;
+    --medium-color: #E5E7EB;
+    --accent-color: #3882F6;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -26,20 +33,11 @@ body {
     min-height: 400px;
 }
 
-/* Defaults: Colors */
-.dark {
-    background-color: #1F2937;
-}
-
-.light {
-    background-color: #ffffff;
-}
-
-.medium {
-    background-color: #E5E7EB;
-}
-
 /* Section 1 */
+#hero-section {
+    background-color: var(--dark-color);
+}
+
 .header {
     justify-content: space-between;
     align-items: center;
@@ -48,7 +46,7 @@ body {
 .logo {
     font-weight: 700;
     font-size: 24px;
-    color: #F9FAF8
+    color: var(--light-color)
 }
 
 .header ul {
@@ -59,7 +57,7 @@ body {
 }
 
 .header a {
-    color: #ffffff;
+    color: var(--light-color);
     text-decoration: none;
 }
 
@@ -70,12 +68,12 @@ body {
 .title {
     font-size: 48px;
     font-weight: 900;
-    color: #F9FAF8;
+    color: var(--light-color);
 }
 
 .subtitle {
     font-size: 18px;
-    color: #E5E7EB;
+    color: var(--medium-color);
 }
 
 .left,
@@ -89,10 +87,14 @@ body {
 }
 
 /* Section 2 */
+#carousel-section {
+    background-color: var(--light-color);
+}
+
 .section-header {
     font-size: 36px;
     font-weight: 900;
-    color: #1F2937;
+    color: var(--dark-color);
 }
 
 .section.light .content {
@@ -106,6 +108,16 @@ body {
 
 .img-group img {
     width: 16.6vw;
-    border: 3px solid #3882F6;
+    border: 3px solid var(--accent-color);
     border-radius: 10px;
+}
+
+/* Section 3 */
+#quote-section {
+    background-color: var(--medium-color);
+}
+
+.footer {
+    background-color: var(--dark-color);
+    height: 50px;
 }
