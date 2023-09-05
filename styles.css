@@ -1,7 +1,8 @@
 :root {
     --dark-color: #1F2937;
     --light-color: #F9FAF8;
-    --medium-color: #E5E7EB;
+    --light-gray-color: #E5E7EB;
+    --dark-gray-color: #83858a;
     --accent-color: #3882F6;
 }
 
@@ -57,7 +58,7 @@ body {
 }
 
 .header a {
-    color: var(--medium-color);
+    color: var(--light-gray-color);
     text-decoration: none;
 }
 
@@ -69,7 +70,7 @@ body {
 
 .subtitle {
     font-size: 18px;
-    color: var(--medium-color);
+    color: var(--light-gray-color);
 }
 
 .left,
@@ -110,12 +111,13 @@ body {
 }
 
 .img-subtitle {
-    margin: 0;
+    margin: 10px 0 0 0;
+    color: var(--dark-gray-color);
 }
 
 /* Section 3 */
 #quote-section {
-    background-color: var(--medium-color);
+    background-color: var(--light-gray-color);
 }
 
 .footer {
