@@ -57,7 +57,7 @@ body {
 }
 
 .header a {
-    color: var(--light-color);
+    color: var(--medium-color);
     text-decoration: none;
 }
 
