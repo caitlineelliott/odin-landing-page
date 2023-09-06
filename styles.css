@@ -37,6 +37,7 @@ body {
 .content {
     border: 1px solid red;
     width: 100%;
+    flex: 1;
 }
 
 /* Section 1 */
@@ -47,6 +48,7 @@ body {
 .header {
     justify-content: space-between;
     align-items: center;
+    margin-top: 15px;
 }
 
 .logo {
@@ -78,62 +80,27 @@ body {
     color: var(--light-gray-color);
 }
 
+.cta-btn-med {
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100px;
+    color: var(--light-color);
+    font-weight: bold;
+}
+
+.left {
+    display: flex;
+    gap: 8px;
+}
+
 .left,
-.images {
+.right {
     flex: 1;
 }
 
 .header-img {
     width: auto;
-    height: 200px;
-}
-
-/* Section 2 */
-#carousel-section {
-    background-color: var(--light-color);
-}
-
-.section-header {
-    font-size: 36px;
-    font-weight: 900;
-    color: var(--dark-color);
-    padding: 30px 0;
-}
-
-.section .content {
-    gap: 50px;
-    flex: 2;
-}
-
-.img-group {
-    align-items: center;
-}
-
-.img-group img {
-    width: 15vw;
-    border: 3px solid var(--accent-color);
-    border-radius: 10px;
-}
-
-.img-subtitle {
-    margin: 10px 0 0 0;
-    color: var(--dark-gray-color);
-}
-
-/* Section 3 */
-#quote-section {
-    background-color: var(--light-gray-color);
-}
-
-.quote {
-    font-size: 36px;
-    font-weight: 100;
-    color: var(--dark-color);
-    font-style: italic;
-}
-
-
-.footer {
-    background-color: var(--dark-color);
-    height: 50px;
+    height: 225px;
 }
