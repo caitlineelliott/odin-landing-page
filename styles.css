@@ -105,3 +105,37 @@ body {
     width: auto;
     height: 225px;
 }
+
+/* Section 2 */
+#carousel-section {
+    background-color: var(--light-color);
+}
+
+.section-header {
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--dark-color);
+    margin-top: 30px;
+}
+
+#carousel-section > .content {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+.img-group {
+    align-items: center;
+}
+
+.img-group img {
+    width: 13.5vw;
+    border: 3px solid var(--accent-color);
+    border-radius: 10px;
+}
+
+.img-subtitle {
+    margin: 10px 0 0 0;
+    color: var(--dark-gray-color);
+}
