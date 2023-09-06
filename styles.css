@@ -32,11 +32,13 @@ body {
 .section {
     padding: 0 200px;
     min-height: 500px;
+    border: 1px solid green;
 }
 
 .content {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
+    align-self: flex-end;
     flex: 1;
 }
 
@@ -114,8 +116,12 @@ body {
 .section-header {
     font-size: 36px;
     font-weight: 900;
+    position: absolute;
     color: var(--dark-color);
-    margin-top: 30px;
+    align-self: flex-start;
+    width: auto;
+    text-align: center;
+    margin-top: 35px;
 }
 
 #carousel-section > .content {
@@ -138,4 +144,29 @@ body {
 .img-subtitle {
     margin: 10px 0 0 0;
     color: var(--dark-gray-color);
+}
+
+/* Section 3 */
+#quote-section {
+    background-color: var(--light-gray-color);
+    display: flex;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: 100;
+    color: var(--dark-color);
+    font-style: italic;
+    flex: 1;
+}
+
+.quote,
+.author {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background-color: var(--dark-color);
+    height: 50px;
 }
