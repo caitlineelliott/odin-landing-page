@@ -85,9 +85,10 @@ body {
     border: none;
     border-radius: 10px;
     padding: 5px;
-    width: 100px;
+    width: 150px;
     color: var(--light-color);
     font-weight: bold;
+    font-size: 18px;
 }
 
 .left {
