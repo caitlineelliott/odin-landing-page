@@ -34,6 +34,11 @@ body {
     min-height: 500px;
 }
 
+.content {
+    border: 1px solid red;
+    width: 100%;
+}
+
 /* Section 1 */
 #hero-section {
     background-color: var(--dark-color);
@@ -119,6 +124,14 @@ body {
 #quote-section {
     background-color: var(--light-gray-color);
 }
+
+.quote {
+    font-size: 36px;
+    font-weight: 100;
+    color: var(--dark-color);
+    font-style: italic;
+}
+
 
 .footer {
     background-color: var(--dark-color);
