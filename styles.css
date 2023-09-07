@@ -4,6 +4,7 @@
     --light-gray-color: #E5E7EB;
     --dark-gray-color: #83858a;
     --accent-color: #3882F6;
+    --default-border-radius: 10px;
 }
 
 body {
@@ -12,6 +13,33 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto";
+}
+
+/* Defaults: Elements */
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    border: none;
+    border-radius: var(--default-border-radius);
+    padding: 5px;
+    width: 150px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn-med {
+    background-color: var(--accent-color);
+    color: var(--light-color);
+}
+
+.btn-light {
+    background-color: transparent;
+    color: var(--light-color);
+    border: 2px solid var(--light-color);
 }
 
 /* Defaults: Flex */
@@ -40,7 +68,7 @@ body {
     flex: 1;
 }
 
-/* Section 1 */
+/* Hero Section */
 #hero-section {
     background-color: var(--dark-color);
 }
@@ -80,17 +108,6 @@ body {
     color: var(--light-gray-color);
 }
 
-.cta-btn-med {
-    background-color: var(--accent-color);
-    border: none;
-    border-radius: 10px;
-    padding: 5px;
-    width: 150px;
-    color: var(--light-color);
-    font-weight: bold;
-    font-size: 18px;
-}
-
 .left {
     display: flex;
     gap: 8px;
@@ -106,7 +123,7 @@ body {
     height: 225px;
 }
 
-/* Section 2 */
+/* Carousel Section */
 #carousel-section {
     background-color: var(--light-color);
 }
@@ -144,7 +161,7 @@ body {
     color: var(--dark-gray-color);
 }
 
-/* Section 3 */
+/* Quote Section */
 #quote-section {
     background-color: var(--light-gray-color);
 }
@@ -178,6 +195,34 @@ body {
     padding: 0;
 }
 
+/* CTA Section */
+#cta-section {
+    background-color: var(--light-color);
+    justify-content: center;
+}
+
+#cta-section > .content {
+    background-color: var(--accent-color);
+    border-radius: var(--default-border-radius);
+    flex: 1;
+    max-height: 150px;
+    padding: 50px 100px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--light-color);
+}
+
+.cta-subtitle {
+    color: var(--light-gray-color);
+}
+
+/* Footer */
 .footer {
     background-color: var(--dark-color);
     height: 50px;
