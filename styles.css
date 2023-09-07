@@ -36,7 +36,6 @@ body {
 }
 
 .content {
-    /* border: 1px solid red; */
     width: 100%;
     align-self: flex-end;
     flex: 1;
@@ -116,19 +115,19 @@ body {
 .section-header {
     font-size: 36px;
     font-weight: 900;
-    position: absolute;
+    flex: 1;
     color: var(--dark-color);
-    align-self: flex-start;
     width: auto;
     text-align: center;
-    margin-top: 35px;
+    display: flex;
 }
 
 #carousel-section > .content {
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 0 100px;
     box-sizing: border-box;
+    flex: 1.5;
 }
 
 .img-group {
