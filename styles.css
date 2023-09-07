@@ -32,7 +32,6 @@ body {
 .section {
     padding: 0 200px;
     min-height: 500px;
-    border: 1px solid green;
 }
 
 .content {
@@ -148,7 +147,11 @@ body {
 /* Section 3 */
 #quote-section {
     background-color: var(--light-gray-color);
-    display: flex;
+}
+
+#quote-section > .content {
+    padding: 0 125px;
+    box-sizing: border-box;
 }
 
 .quote {
@@ -157,6 +160,16 @@ body {
     color: var(--dark-color);
     font-style: italic;
     flex: 1;
+    display: flex;
+    align-items: flex-end;
+}
+
+.author {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .quote,
