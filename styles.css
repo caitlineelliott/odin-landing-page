@@ -16,7 +16,6 @@ body {
 }
 
 /* Defaults: Elements */
-
 p {
     margin: 0;
     padding: 0;
@@ -226,4 +225,5 @@ p {
 .footer {
     background-color: var(--dark-color);
     height: 50px;
+    color: var(--light-color);
 }
